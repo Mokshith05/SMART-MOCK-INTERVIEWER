@@ -260,3 +260,8 @@ When describing this project on your resume, you can highlight:
 - Scoring and feedback, with answer embeddings stored in Chroma.
 - Clean separation between frontend, AI orchestration service, and model/vector infrastructure.
 
+
+
+LINK FOR MY PROJECT VIDEO 
+
+https://drive.google.com/file/d/1AktLUyBpb22dmxTJ7fQRIuUkCDQgTTgT/view?usp=sharing
