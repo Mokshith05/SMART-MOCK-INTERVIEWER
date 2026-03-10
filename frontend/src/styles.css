@@ -1,0 +1,291 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(16px);
+  background: rgba(15, 23, 42, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.2), transparent),
+    radial-gradient(circle at bottom left, rgba(236, 72, 153, 0.18), transparent),
+    rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.9);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  color: #cbd5f5;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 2rem;
+  padding: 1.75rem 1.75rem 2rem;
+  border-radius: 1.25rem;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.8);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h2 {
+  margin: 0 0 0.25rem;
+}
+
+.muted {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field span {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+input,
+select,
+textarea {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.6);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+}
+
+.error {
+  color: #f97373;
+  font-size: 0.9rem;
+}
+
+.question-block {
+  margin-bottom: 1.25rem;
+}
+
+.question-block h3 {
+  margin: 0 0 0.5rem;
+}
+
+.question-text {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.feedback-block {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  background: rgba(22, 30, 59, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.score {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.summary-item {
+  padding: 0.9rem 1rem;
+  border-radius: 0.85rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.summary-item .label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.summary-item .value {
+  margin: 0.2rem 0 0;
+  font-size: 1.1rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.list {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0 0;
+}
+
+.list li {
+  margin-bottom: 0.3rem;
+}
+
+.turns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.turn {
+  padding: 0.9rem 1rem;
+  border-radius: 0.85rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.turn-question {
+  margin: 0 0 0.4rem;
+  font-weight: 500;
+}
+
+.turn-answer,
+.turn-score,
+.turn-feedback {
+  margin: 0.1rem 0;
+  font-size: 0.93rem;
+}
+
+@media (max-width: 640px) {
+  .app-main {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 1.75rem 1.5rem;
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "name": "ai-service",
+  "version": "1.0.0",
+  "description": "AI interview service using Express, Supabase, Chroma and Ollama",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  }
+}
+
